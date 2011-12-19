@@ -218,10 +218,37 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: 
-   ========================================================================== */
+   Author: Ryan Mueller
+   Google fonts: 
+   			header 'IM Fell DW Pica SC', serif
+   			paragraph 'Linden Hill', serif
+========================================================================== */
 
+html 	{background:rgb(197,195,174);}
+body	{width:74%; min-width:760px; max-width:1920px; margin:2em auto; border:1px solid #999;
+			font:1em serif;
+			background: rgb(255,255,255);
+			padding-top: 2em;
+			border-bottom-left-radius: 20px 500px;
+			border-bottom-right-radius: 500px 30px;
+			border-top-right-radius: 100px 20px;
+			border-top-left-radius: 20px 40px;
+			box-shadow: 5px 5px 10px #666;}
+p 		{font-size:1.1em;}
+header,
+article,
+footer	{margin:0 8em;}
 
+/* Web Font Loader */
+.wf-loading,
+.wf-inactive	{font-family:serif;}
+
+.wf-active .docu-site-title	{font-family:'IM Fell DW Pica SC';}
+.wf-active p,
+.wf-active h2 {font-family:'Linden Hill';}
+
+.docu-site-descr	{border-bottom:2px solid #444;}
+.docu-site-title	{margin:1.4em auto; text-align:center; font-size:2em;}
 
 
 

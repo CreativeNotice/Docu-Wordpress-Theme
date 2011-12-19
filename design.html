@@ -14,13 +14,28 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href="style.css">
 		<script src="scripts/modernizer.min.js"></script>
+		<script>
+			/* Load Google Web Fonts */
+			WebFontConfig = {
+				google: { families: [ 'IM Fell DW Pica SC', 'Linden Hill' ] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+
+		</script>
 	</head>
 	<body>
 		<header>
-			<h3>Site Description Goes Here</h3>
+			<p class="docu-site-descr">Site Description Goes Here</p>
 		</header>
 		<article>
-			<h1>Site Title Goes Here</h1>
+			<h1 class="docu-site-title">Site Title Goes Here</h1>
 			<section>
 				<h2>Post title here</h2>
 				<p>Post contents goes here</p>
@@ -28,13 +43,16 @@
 			</section>
 		</article>
 		<footer></footer>
-		  <!-- Change UA-XXXXX-X to be your site's ID -->
 		<script>
-			window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],[_trackPageLoadTime']];
+			/* Load Google Analytics Using Modernizr 
+				Change UA-XXXXX-X to be your site's ID 
+			window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
 			Modernizr.load({
 				load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
 			});
+			*/
 		</script>
+
 		<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6. chromium.org/developers/how-tos/chrome-frame-getting-started -->
 		<!--[if lt IE 7 ]>
 			<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
